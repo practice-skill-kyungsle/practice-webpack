@@ -1,5 +1,7 @@
-module.exports = function () {
-    let printer = document.createElement("div");
-    printer.innerHTML = "second module!";
-    return printer;
-};
+export default function () {
+    let newHTML = "";
+    newHTML += "<div>";
+    newHTML += "second module!";
+    newHTML += "</div>";
+    return new DOMParser().parseFromString(newHTML, "text/html").body.firstChild;
+}
