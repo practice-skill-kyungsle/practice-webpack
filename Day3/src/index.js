@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import FirstModule from "./firstModule";
-import SecondModule from "./secondModule";
+import Module1 from "./Module1";
+import Module2 from "./Module1";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <FirstModule />
-        <SecondModule />
+        <Module1 />
+        <Module2 />
     </>
 );
